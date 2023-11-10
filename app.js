@@ -61,7 +61,7 @@ const html = `
   </head>
   <body>
     <section>
-      Hello from Render!
+      Happy Diwali! You have been hacked!
     </section>
   </body>
 </html>
