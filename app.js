@@ -5,7 +5,7 @@ const IP = require('ip');
 
 app.get("/", (req, res) => {
   const ipAddress = IP.address();
-  res.send(ipAddress)
+  console.log("ip address "+ ipAddress);
   res.type('html').send(html)
 });
 
