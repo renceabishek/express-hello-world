@@ -2,12 +2,13 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 const IP = require('ip');
+let os = require('os');
 
 app.enable('trust proxy')
 app.get("/", (req, res) => {
   const ipAddress = IP.address();
   //console.log("ip address "+ ipAddress);
-  console.log(req.ip);
+  console.log("Ip Address :"+req.ip+" User :"+os.userInfo().username);
   res.type('html').send(html)
 });
 
